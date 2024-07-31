@@ -1,0 +1,291 @@
+body {
+    overflow-x: hidden;
+    background-color: var(--7);
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .main-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .thumbnail-container img {
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .text-container {
+        max-width: 800px;
+        text-align: left;
+    }
+    
+    .titulo {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .estrela {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .preco {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .entrar-contato {
+        background-color: #89A993;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    .descricao, .aroma, .peso, .tempo, .notas {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+    
+    .descricao-txt {
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    
+    .notas2 {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-left: 1.5rem;
+    }
+    
+    .recommendations {
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    
+    .all {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .all-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .image-with-description {
+        text-align: center;
+        max-width: 200px;
+    }
+    
+    .image-with-description img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .image-with-description p {
+        margin: 5px 0;
+    }
+    
+    .adf {
+        font-size: 1rem;
+    }
+    
+    .adc {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .container {
+        text-align: center;
+        display: flex;
+        /* max-width: 80%; */
+    }
+    
+    .main-image {
+        display: block;
+        margin-top: 130px;
+        margin-left: 100px;
+        height: 1050px;
+    }
+    
+    .thumbnail-container {
+        display: flex;
+        margin-left: 90px;
+        margin-top: 20px;
+        margin-bottom: 90px;
+        height: 331px;
+    }
+    
+    .thumbnail-container img {
+    margin: 0 10px;
+    }
+    
+    .titulo {
+    font-size: 35px;
+    margin-left: 35px;
+    }
+    
+    .estrela {
+    font-size: 50px;
+    margin-right: 460px;
+    margin-top: 30px;
+    }
+    
+    .preco {
+    font-size: 35px;
+    margin-right: 510px;
+    margin-top: 40px;
+    }
+    
+    .entrar-contato {
+        background-color: #89A993;
+        border: 0px;
+        top: 20px;
+        height: 70px;
+        width: 350px;
+        margin-right: 340px;
+        margin-top: 140px;
+        font-size: 30px;
+    }
+    
+    .descricao {
+    font-size: 30px;
+    margin-right: 379px;
+    margin-top: 70px;
+    }
+    
+    .aroma{
+    font-size: 30px;
+    margin-right: 290px;
+    margin-top: 70px;
+    }
+    
+    .descricao-txt{
+    margin-left: 28px;
+    position: absolute;
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 90px;
+    
+    }
+    
+    .descricao-txt2{
+    margin-left: 28px;
+    position: absolute;
+    font-size: 30px;
+    text-align: justify;
+    margin-right: 90px;
+    margin-top: 55px;
+    
+    }
+    
+    .peso{
+    text-align: justify;
+    margin-top: 300px;
+    font-size: 30px;
+    margin-left: 28px;
+    }
+    
+    .tempo{
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 28px;
+    }
+    
+    .notas{
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 28px;
+    }
+    
+    .notas2{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 30px;
+    margin-left: 28px;
+    margin-top: 8px;
+    }
+    
+    
+    .text-container {
+    max-width: 900px; 
+    margin-top: 123px;
+    }
+    
+    
+    
+    .all {
+    font-size: 35px;
+    margin-left: 100px;
+    }
+    
+    .all-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+    }
+    
+    .image-with-description {
+    text-align: center; 
+    margin: 0 50px; 
+    }
+    
+    .xxxe {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+    
+    }
+    
+    .image-with-description p {
+    font-size: 25px; 
+    }
+    
+    .image-with-description .adc {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    }
+    
+    .adf {
+    margin-top: 10px;
+    }
+}

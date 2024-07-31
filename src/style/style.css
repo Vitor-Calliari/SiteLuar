@@ -1,0 +1,33 @@
+/* Importar fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* Importa a fonte principal */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* Importa a fonte Luar */
+
+:root{   
+    --1: #3A2E39;
+    --2: #3E5650;
+    --3: #867164;
+    --4: #C46D8D;
+    --5: #89A993;
+    --6: #E6A6BD;
+    --7: #FFDDC8;
+
+    /* FFDDC8: Champanhe Rosa
+    89A993: Verde Musgo
+    3A2E39: Preto de Carvão
+    3E5650: Verde Floresta
+    867164: Cinza Taupe
+    C46D8D: Rosa Malva
+    E6A6BD: Rosa Claro */
+}
+
+/* Definições gerais */
+* {
+    padding: 0; /* Define espaçamento interno para 0, coisa que não é padrão e pode interferir na estilização futuramente. */
+    margin: 0; /* Define espaçamento externo para 0, coisa que não é padrão e pode interferir na estilização futuramente. */
+    box-sizing: border-box; /* Faz com que padding e border sejam incluídos nas larguras e alturas dos elementos */
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 16px; /* Por padrão, tamanho de fonte que vai aparecer nos dispositivos. */
+}

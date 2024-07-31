@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Luar Velas Aromáticas</title>
+
+    <link href="src/style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/home.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/cabecalho.css" rel ="stylesheet" type="text/css"/>
+    <link href="src/style/carrosel.css" rel ="stylesheet" type="text/css"/>
+    
+    <script src="src/script/cabecalho.js"></script>
+    <script src="src/script/carossel.js" defer></script>
+    <script src="src/script/sidebar.js" defer></script>
+    <script src="src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="cabecalho-menus">
+            <nav>
+                <ul class="lateral">
+                    <li class="cabecalho-menu" onclick="hideSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho-logo">
+            <a href="#" onclick="showSidebar()"><img src="src/icon/luar-logo.svg"></a>
+        </div>
+
+        <div class="cabecalho-pesquisa" id="pesquisa">
+            <a href="" onclick="showSidebar()"><img src="src/icon/pesquisar-lupa.svg" id="pesquisa"></a>
+            Procurar produtos
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1" checked>
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="src/image/carrosel/image1.jpg">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="src/image/carrosel/image2.jpg">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="src/image/carrosel/image3.jpg">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p class="titulo">Conheça nossos produtos</p>
+
+        <div class="container">
+            <div class="coluna">
+                <div class="image-container">
+                    <img src="src\image\home\img1.jpg">
+                    <p class="titulo-produto">Linha Premium</p>
+                    <a href="produto.html" class="button">Ver mais</a>
+                </div>
+                
+                <div class="text-container-left">
+                    <p>Velas especiais que apresentam elegância e alta qualidade na produção, com aromas florais, frescos, românticos e únicos.</p><br><br>
+                    <p>A Linha Premium é composta pelas velas Desjardins, Vinho & Especiarias e Unique.</p>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <div class="text-container-right">
+                    <p>Velas aromáticas feitas com cera vegetal, essência premium, pavio de algodão e muito amor!</p><br><br>
+                    <p>A Linha Classic é composta pelos aromas Canela Spicy, Vanilla Sky, Chá Branco, Cascas e Folhas, Bamboo e Blossom.</p>
+                </div>
+            
+                <div class="image-container">
+                    <img src="src\image\home\img2.jpg">
+                    <p class="titulo-produto">Linha Classic</p>
+                    <a href="produto.html" class="button">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="titulo">Marketing Olfativo</h2>
+
+        <div class="marketing-section">
+            <div class="marketing-image">
+                <img src="src\image\home\img3.jpg" style="width:100%;">
+            </div>
+
+            <div class="marketing-content">
+                <p>Somos a primeira empresa de marketing olfativo de Toledo/PR!</p><br><br>
+                <p>Criamos uma identidade olfativa única para a sua marca, fazendo seu empreendimento ser lembrado por uma fragrância exclusiva.</p><br><br>
+                <p>Dê destaque para sua marca com a criação de um aroma único, com muita qualidade e elegância, criando conexões com seu cliente!</p><br>
+
+                <a href="#" class="marketing-button">Saiba mais!</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="titulo">Quem somos?</h1>
+
+        <div class="container-quem-somos">
+            <div class="text-section">
+                <p>Bem-vindo à Luar! Aqui transformamos aromas em experiências incríveis.</p><br>
+                <p>Somos uma empresa familiar e pioneira em marketing olfativo em Toledo/PR, realizando atendimentos para todo o Brasil.</p><br>
+                <p>Nos dedicamos a criar fragrâncias únicas que capturam e comunicam a essência da sua marca.</p><br>
+                <p>Juntos, nós, uma engenheira química apaixonada por aromas e um biotecnólogo com expertise em gestão, oferecemos produtos de altíssima qualidade que não apenas perfumam ambientes, mas também contam histórias, transmitem emoções e comunicam a sua marca e a tornam inesquecível!</p><br>
+                <p>Convidamos você a descobrir como nossas soluções aromáticas podem elevar sua marca e enriquecer seu ambiente. Sinta a Luar e permita que nossos aromas exclusivos criem momentos memoráveis e experiências sensoriais incomparáveis.</p>
+            </div>
+            
+            <div class="image-section">
+                <img src="src\image\home\img4.jpg">
+            </div>    
+        </div>
+    </section>
+
+    <section>
+        <h1 class="titulo">Insumos de alta qualidade</h1>
+
+        <div class="insumos-section">
+            <div class="insumos-image">
+                <img src="src\image\home\img5.jpg">
+            </div>
+    
+            <div class="insumos-content">
+                <p>Você já parou para pensar na qualidade dos produtos que consome diariamente?</p><br>
+                <p>Na Luar, qualidade não é um diferencial, é o básico. Todos os nossos fornecedores foram validados em incansáveis testes para que possamos entregar o melhor produto!</p><br>
+                <p>Como resultado, alcançamos a excelência na exalação dos nossos produtos aromáticos, tanto da linha da Luar, quanto nas linhas exclusivas que criamos para nossos clientes.</p><br>
+                <p>Cada entrega que chega contém aromas que contam histórias, criam memórias e participam de momentos especiais nas vidas dos nossos clientes. Cada produto desenvolvido será um presente especial ou perfumará a marca tão sonhada de um empresário. Nos sentimos privilegiados com tamanha responsabilidade! Assim, nosso propósito se fortalece cada vez mais!</p><br>
+                <p>Por isso, te convidamos a experimentar e sentir nossos produtos. <b>Sinta a Luar!</b></p><br>
+            </div>
+        </div>    
+    </section>
+
+
+<footer class="footer">
+    <div class="footer-section informacoes">
+        <p class="fonte-titulo-footer">Informações</p>
+            <ul>
+                <li>Termos de serviço</li>
+                <li>Política de privacidade</li>
+                <li>Trocas e devoluções</li>
+                <li>Reembolso</li>
+            </ul>
+    </div>
+
+    <div class="footer-section navegacao">
+        <p class="fonte-titulo-footer">Navegação</p>
+            <ul>
+                <li>Velas aromáticas</li>
+                <li>Marketing olfativo</li>
+                <li>Crie sua fragrância</li>
+                <li>Aromatização personalizado</li>
+            </ul>
+    </div>
+    
+    <div class="footer-section">
+        <div class="contato">
+            <button class="contato" onclick="location.href='https://api.whatsapp.com/send?phone=SEUNUMERO'">
+            <img src="src/icon/whatsapp-icon.svg" height="20px">Entre em contato pelo WhatsApp</button>
+        </div>
+
+        <div class="icones-sociais">
+            <a href="https://instagram.com/sintaluar"><img src="src/icon/instagram-icon.svg" alt="Instagram"></a>
+            <a href=""><img src="src/icon/tiktok-icon.svg" alt="TikTok"></a>
+            <a href="seu-link-de-email"><img src="src/icon/email-icon.svg" alt="Email"></a>
+        </div>
+    </div>
+</body>
+
+</html>

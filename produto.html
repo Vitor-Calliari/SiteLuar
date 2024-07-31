@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Produto</title>
+
+    <link href="src/style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/produto.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/cabecalho.css" rel ="stylesheet" type="text/css"/>
+    <link href="src/style/home.css" rel ="stylesheet" type="text/css"/>
+    
+    <script src="src/script/cabecalho.js" defer></script>
+    <script src="src/script/script.js" defer></script>
+</head>
+
+<body>
+    
+    <header class="cabecalho" id="cabecalho">
+        <div class="cabecalho-menus">
+            <nav>
+                <ul class="lateral">
+                    <li class="cabecalho-menu" onclick="hideSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho-logo">
+            <a href="#" onclick="showSidebar()"><img src="src/icon/luar-logo.svg"></a>
+        </div>
+
+        <div class="cabecalho-pesquisa" id="pesquisa">
+            <a href="" onclick="showSidebar()"><img src="src/icon/pesquisar-lupa.svg" id="pesquisa"></a>
+            Procurar produtos
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="images-container">
+            <img src="src\image\produto\img1.png" class="main-image" alt="Imagem Principal">
+            <div class="thumbnail-container">
+                <img src="src\image\produto\img2.png" class="teste" alt="Chama da Vela">
+                <img src="src\image\produto\img3.png" class="teste" alt="Vela Apagada">
+                <img src="src\image\produto\img4.png" class="teste" alt="Vela em Ambiente Decorado">
+            </div>
+        </div>
+        
+        <div class="text-container">
+            <p class="titulo">Vela aromática Desjardins - Linha Premium</p>
+            <p class="estrela">★★★★★</p>
+            <p class="preco">R$ 89,90</p>
+            <input type="button" class="entrar-contato" value="Entrar em Contato">
+            <p class="descricao">Descrição do produto:</p>
+            <p class="aroma"><b>Aroma:</b> Floral frutado suave.</p>
+            <p class="descricao-txt">A vela aromática Desjardins possui um aroma suave para trazer bem estar e paz interior. Este produto foi pensado como uma combinação que reúne elegância e sofisticação para o seu ambiente em um aroma delicioso!</p>
+            <p class="peso"><b>Peso:</b> 160 gramas.</p>
+            <p class="tempo"><b>Tempo de queima:</b> 40 horas.</p>
+            <p class="notas"><b>Notas:</b></p>
+            <div class="notas2">
+                <p>Saída: Lavanda e Bergamota;</p>
+                <p>Corpo: Rosas e Lírio do Vale;</p>
+                <p>Fundo: Musk Branco e Fava de Baunilha.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="recommendations">
+        <p class="all">Você também pode gostar:</p>
+        <div class="all-container">
+        <div class="image-with-description">
+            <img src="src\image\produto\img5.png" class="xxxe" alt="Imagem 1">
+            <p>Premium - Unique</p>
+            <p class="adf">R$ 89,90</p>
+            <p class="adc">★★★★★</p>
+        </div>
+        <div class="image-with-description">
+            <img src="src\image\produto\img6.png" class="xxxe" alt="Imagem 2">
+            <p>Premium - Vinho e Especiarias</p>
+            <p class="adf">R$ 89,90</p>
+            <p class="adc">★★★★★</p>
+        </div>
+        <div class="image-with-description">
+            <img src="src\image\produto\img7.png" class="xxxe" alt="Imagem 3">
+            <p>Classic - Oh Happy Day</p>
+            <p class="adf">R$ 89,90</p>
+            <p class="adc">★★★★★</p>
+        </div>
+        <div class="image-with-description">
+            <img src="src\image\produto\img8.png" class="xxxe" alt="Imagem 4">
+            <p>Classic - Chá Branco</p>
+            <p class="adf">R$ 89,90</p>
+            <p class="adc">★★★★★</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section informacoes">
+            <p class="fonte-titulo-footer">Informações</p>
+                <ul>
+                    <li>Termos de serviço</li>
+                    <li>Política de privacidade</li>
+                    <li>Trocas e devoluções</li>
+                    <li>Reembolso</li>
+                </ul>
+        </div>
+    
+        <div class="footer-section navegacao">
+            <p class="fonte-titulo-footer">Navegação</p>
+                <ul>
+                    <li>Velas aromáticas</li>
+                    <li>Marketing olfativo</li>
+                    <li>Crie sua fragrância</li>
+                    <li>Aromatização personalizado</li>
+                </ul>
+        </div>
+        
+        <div class="footer-section">
+            <div class="contato">
+                <button class="contato" href="https://api.whatsapp.com/send?phone=45920013524">
+                <img src="src/icon/whatsapp-icon.svg" height="20px">Entre em contato pelo WhatsApp</button>
+            </div>
+    
+            <div class="icones-sociais">
+                <a href="seu-link-do-Instagram"><img src="src/icon/instagram-icon.svg" alt="Instagram"></a>
+                <a href=""><img src="src/icon/tiktok-icon.svg" alt="TikTok"></a>
+                <a href="seu-link-de-email"><img src="src/icon/email-icon.svg" alt="Email"></a>
+            </div>
+        </div>
+</div>
+</body>
+
+</html>

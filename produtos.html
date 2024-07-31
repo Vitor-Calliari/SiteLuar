@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/produtos.css">
+    <link rel="stylesheet" href="src/style/cabecalho.css">
+    <link rel="stylesheet" href="src/style/style.css">
+
+    <script src="src/script/cabecalho.js"></script>
+    <script src="src/script/carossel.js" defer></script>
+    <script src="src/script/sidebar.js" defer></script>
+    <script src="src/script/script.js" defer></script>
+    <title>Produtos</title>
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div class="cabecalho-menus">
+            <nav>
+                <ul class="lateral">
+                    <li class="cabecalho-menu" onclick="hideSidebar()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                </ul>
+                
+                <ul>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="index.html" class="cabecalho-menu">Home</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="produtos.html" class="cabecalho-menu">Produtos</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="marketing-olfativo.html" class="cabecalho-menu">Marketing Olfativo</a>
+                    </li>
+                    <li class="cabecalho-menu" id="menus-ocultar">
+                        <a href="contato.html" class="cabecalho-menu">Contato</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecalho-logo">
+            <a href="#" onclick="showSidebar()"><img src="src/icon/luar-logo.svg"></a>
+        </div>
+
+        <div class="cabecalho-pesquisa" id="pesquisa">
+            <a href="" onclick="showSidebar()"><img src="src/icon/pesquisar-lupa.svg" id="pesquisa"></a>
+            Procurar produtos
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="txt">
+           <div> <h3 class="TP">Filtrar por:</h3> </div>
+               <div><select>
+                <option value="Todos os produtos">Todos os produtos</option>
+                <option value="Linha Classic">Linha Classic</option>
+                <option value="linha Premium">Linha Premium</option>
+                
+                </select></div>
+           <div><h3 class="TP">Organizar por:</h3></div> 
+            <div><select>
+                    <option value="Mais Vendidos">Mais Vendidos</option>
+                    <option value="Menos Vendidos">Menos vendidos</option>
+                    <option value="Populares">Populares</option>
+        </select></div> 
+        </div>
+<div class="txt2">
+    <h1>Velas Aromaticas</h1>
+    <p>Nossas velas são feitas com cera vegetal e essências exclusivas. Transforme seu ambiente com elegância e sofisticação.</p>
+</div>
+        
+        <div class="container">
+            <div class="card">
+                <div class="img"><img src="src/image/produto/chabranco.jpeg"></div>
+                <div class="desc">
+                    <h1>Classic - Chá branco</h1>
+                       <h6> R$ 56,90 </h6>
+                    <div class="star">
+                        <img src="src/icon/star.svg">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/halfstar.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="img"><img src="src/image/produto/Happyday.jpeg"></div>
+                <div class="desc">
+                    <h1>Classic - Oh Happy Day</h1>
+                    <h6> R$ 56,90 </h6>
+                    <div class="star">
+                        <img src="src/icon/star.svg">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/halfstar.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="src/image/produto/Desjardins.jpeg"></div>
+                <div class="desc">
+                    <h1> Premium - Desjardins</h1>
+                    <h6> R$ 89,90 </h6>
+                    <div class="star">
+                        <img src="src/icon/star.svg">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/halfstar.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="src/image/produto/img5.png"></div>
+                <div class="desc">
+                    <h1>Premium - Unique </h1>
+                    <h6> R$ 89,90 </h6>
+                    <div class="star">
+                        <img src="src/icon/star.svg">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/halfstar.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="img"><img src="src/image/produto/vinho2.jpg"></div>
+                <div class="desc">
+                    <h1>Preium - Vinho e Especiarias </h1>
+                           <h6> R$ 89,90 </h6>
+                    <div class="star">
+                        <img src="src/icon/star.svg">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/star.svg" alt="">
+                        <img src="src/icon/halfstar.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Aqui vai o restante do conteúdo principal -->
+
+    <footer class="footer">
+        <div class="footer-section informacoes">
+            <p class="fonte-titulo-footer">Informações</p>
+                <ul>
+                    <li>Termos de serviço</li>
+                    <li>Política de privacidade</li>
+                    <li>Trocas e devoluções</li>
+                    <li>Reembolso</li>
+                </ul>
+        </div>
+
+        <div class="footer-section navegacao">
+            <p class="fonte-titulo-footer">Navegação</p>
+                <ul>
+                    <li>Velas aromáticas</li>
+                    <li>Marketing olfativo</li>
+                    <li>Crie sua fragrância</li>
+                    <li>Aromatização personalizado</li>
+                </ul>
+        </div>
+
+        <div class="footer-section">
+            <div class="contato">
+                <button class="contato" onclick="location.href='https://api.whatsapp.com/send?phone=SEUNUMERO'">
+                <img src="src/icon/whatsapp-icon.svg" height="20px">Entre em contato pelo WhatsApp</button>
+            </div>
+
+            <div class="icones-sociais">
+                <a href="https://instagram.com/sintaluar"><img src="src/icon/instagram-icon.svg" alt="Instagram"></a>
+                <a href=""><img src="src/icon/tiktok-icon.svg" alt="TikTok"></a>
+                <a href="seu-link-de-email"><img src="src/icon/email-icon.svg" alt="Email"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

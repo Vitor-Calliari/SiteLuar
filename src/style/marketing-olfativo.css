@@ -1,0 +1,200 @@
+body {
+    background-color: var(--7);
+}
+
+.titulo {
+    font-family: "Special Elite", system-ui;
+}
+
+.botao-ver-mais {
+    background-color: var(--5);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.marketing-olfativo {
+    margin-top: 100px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .titulo {
+        font-family: "Special Elite", system-ui;
+        margin-top: 20px;
+    }
+
+    .botao-ver-mais {
+        display: flex;
+        background-color: var(--5);
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-top: 10px;
+        align-content: center;
+        border-radius: 10px;
+    }
+    
+    /* Marketing Olfativo */
+    .marketing-olfativo {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60%;
+    }
+    
+    .marketing-olfativo .texto {
+        margin-top: 10px;
+    }
+    
+
+    .section-2, .section-3, .section-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+
+    .section-2 .texto, .section-3 .texto, .section-4 .texto {
+        width: 100%;
+        order: 1;
+    }
+
+    .section-2 .imagem, .section-3 .imagem, .section-4 .imagem {
+        margin-top: 30px;
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Marketing Olfativo */
+    .marketing-olfativo {
+        text-align: center;
+    
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40%;
+    }
+    
+    .marketing-olfativo .texto {
+        margin-top: 10px;
+    }
+    
+    /* Section 2 */
+    .section-2 {
+        display: flex;
+        margin-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+        max-width: auto;
+        max-height: 600px;
+    }
+    
+    .section-2 .imagem {
+        justify-content: flex-start;
+        align-items: right;
+        object-fit: cover;
+    
+        padding-right: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-2 .texto {
+        font-size: 20px;
+        text-align: left;
+        
+        padding-left: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-2 .texto .titulo {
+        margin-bottom: 10px;
+    }
+    
+    .section-2 .texto p {
+        margin-bottom: 50px;
+    }
+    
+    /* Section 3 */
+    .section-3 {
+        display: flex;
+        margin-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+        max-width: auto;
+        max-height: 600px;
+    }
+    
+    .section-3 .imagem {
+        justify-content: flex-start;
+        align-items: right;
+        object-fit: cover;
+    
+        padding-left: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-3 .texto {
+        font-size: 20px;
+        text-align: right;
+        
+        padding-right: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-3 .texto .titulo {
+        margin-bottom: 10px;
+    }
+    
+    .section-3	.texto p {
+        margin-bottom: 50px;
+    }
+    
+    /* Section 4 */
+    .section-4 {
+        display: flex;
+        margin-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+        max-width: auto;
+        max-height: 600px;
+    }
+    
+    .section-4 .imagem {
+        justify-content: flex-start;
+        align-items: right;
+        object-fit: cover;
+    
+        padding-right: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-4 .texto {
+        font-size: 20px;
+        text-align: left;
+        
+        padding-left: 10px;
+        width: 50%; /* Alinha ao meio */
+    }
+    
+    .section-4 .texto .titulo {
+        margin-bottom: 10px;
+    }
+    
+    .section-4	.texto p {
+        margin-bottom: 50px;
+    }
+    
+    .section-4 .texto span {
+        font-family: "Special Elite", system-ui;
+        font-size: 25px;
+    }
+    
+    
+}

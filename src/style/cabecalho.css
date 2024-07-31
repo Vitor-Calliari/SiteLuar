@@ -1,0 +1,173 @@
+/* Estilos gerais do cabeçalho */
+.cabecalho {
+    background-color: var(--5);
+    width: 100%;
+    transition: top 0.6s;
+    position: fixed;
+    display: inline;
+    top: 0;
+    z-index: 1;
+}
+
+/* Estilos do menu lateral */
+.lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--5);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.lateral li {
+    width: 100%;
+    padding: 10px;
+}
+
+.lateral a {
+    width: 100%;
+}
+
+/* Ocultar elementos de menu em telas menores */
+.cabecalho-menu, .cabecalho-menus {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lateral {
+    display: none;
+}
+
+/* Classes de visibilidade do cabeçalho */
+.cabecalho.hidden {
+    top: -100px;
+}
+
+.cabecalho.visible {
+    top: 0;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 949px) {
+    .lateral {
+        display: none;
+    }
+
+    .cabecalho-menu, .cabecalho-menus {
+        display: flex;
+    }
+    
+    #menus-ocultar {
+        display: none;
+    }
+
+    .cabecalho {
+        /* display: block; */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .cabecalho-logo {
+        margin: 0 auto;
+    }
+
+    .cabecalho-logo img {
+        height: 40px;
+    }
+
+    .cabecalho-pesquisa {
+        margin-top: 10px;
+        display: none; /* Esconder a pesquisa em telas menores */
+    }
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 950px) {
+    .cabecalho {
+        height: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 0 0 #5C6A5A;
+        margin-bottom: 2px;
+    }
+
+    .cabecalho-menus {
+        width: 400px;
+    }
+
+    .cabecalho-menu {
+        display: inline-block;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .cabecalho-logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .cabecalho-logo img {
+        height: 30px;
+    }
+
+    .cabecalho-pesquisa {
+        width: 400px;
+        text-align: right;
+        font-size: 0.8rem;
+    }
+
+    .cabecalho-pesquisa img {
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 8px;
+    }
+
+    .lateral {
+        display: none; /* Esconder o menu lateral em telas maiores */
+    }
+}
+
+/* Estilos adicionais para telas ainda maiores */
+@media screen and (min-width: 1060px) {
+    .cabecalho {
+        height: 70px;
+    }
+
+    .cabecalho-menus {
+        width: 600px;
+    }
+
+    .cabecalho-menu {
+        font-size: 1rem;
+    }
+
+    .cabecalho-logo img {
+        height: 50px;
+    }
+
+    .cabecalho-pesquisa {
+        width: 600px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+    .cabecalho-menu {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho-pesquisa {
+        font-size: 1.2rem;
+    }
+}
